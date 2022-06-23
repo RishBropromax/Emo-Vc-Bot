@@ -47,15 +47,18 @@ Get pyrogram   `SESSION` from here:
 | /stop   | clear the queue and remove the userbot from the call |
 | /Gban   | Gban                                                 |    
 
+<img src= "https://raw.githubusercontent.com/Gishankrishka2/Gishankrishka2/main/Gifs/5eeea355389655.59822ff824b72.gif" width="500">
 
- ## 🏷 Support
+ [![Spotify](https://spotify-readme-3s61yj059-xditya.vercel.app/api/spotify)](https://open.spotify.com/user/on84l0syf9y9m2m84unz4h8uq)
+ 
+## 🏷 Support
 
 Reach out to the maintainer at one of the following places:
 
 - Contact options listed on [this GitHub profile](https://github.com/RishBropromax/Emo-Deckstop-Bot))
 - [Telegram Support](https://t.me/Emo_Bot_Support)
 - Subscribe My Youtube Channel [Youtube](https://www.youtube.com/channel/UCTIprdrvIiMjFdFwJgnmTUg)
-  
-    <h2>Thanks for using my repo. Send me the faults and shortcomings of this repo via telegram. Or add it to my support group👊👊
+ 
+<h2>Thanks for using my repo. Send me the faults and shortcomings of this repo via telegram. Or add it to my support group👊👊
   
  
