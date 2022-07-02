@@ -1,83 +1,98 @@
 {
-  "name": "Emo VC Bot",
-  "logo": "https://telegra.ph/file/626f0a4cc3bb673ea7a9b.jpg",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
-  "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/RishBropromax/Emo-Vc-Bot/",
-  "stack": "container",
-  "buildpacks": [
-   {
-     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-   }   
-  ],        
-  "env": {
-    "SESSION_NAME": {
-      "description": "Pyrogram session string",
-      "required": true
+    "name": "Emo VC Bot ",
+    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Yukki",
+    "YukkiMusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "18895284",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "3091d00186aa25b92a9b791dcebd59de",
+        "required": true
+      },
+      "AUTO_LEAVING_ASSISTANT": {
+        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "value": "True",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "5334563722:AAEZDlquPjBaJsa9jKOVrlKGqyrZgN0FdMc",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
+        "value": "mongodb+srv://Navanjana:Navanjana@cluster0.zdnpe.mongodb.net/?retryWrites=true&w=majority",
+        "required": false
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "A name for your Music Bot. Please don't use ascii characters",
+        "value": "𝙿𝙸𝙽𝙺 𝙿𝙰𝙽𝚃𝙷𝙴𝚁",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "value": "5381705557",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "value": "BQAQIvl6k9OPfe-G3LTXKhQ85_nWeDMS6lr14h7mTCf2g_1wmlp7u_njxbXuZTZ3BWDoQW-Xfqn05rRK5Pq4_x-BgCnEub0qNSCCHfNI2OPku-qP37vweajXCmIXZFWqWWQRp5q2gFjDRFa6NYFEFRYYAEDPKYTNw7ykDt-Bb1BJHsYmRyLnCj0xSKKIsAUq9c0-FKGVdHv3iwtv7awtzDfc3toJL1dSTCNbqsKIpittGJIMhzmmWjqEtRGukMjF4GN9c5m-hKuYRB8JdnAnwaK2X6ZzDNJ1rmYYZEf0M_gGNyp5USzAKF3vJNG57i4NIfpn7QVTQZaBIUDp9tehtxUlAAAAAUDGT1UA",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "2a3ed404-fa8b-445c-9148-9b12cd031907",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your heroku app/bot's name",
+        "value": "pinkpanthervc01",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "value": "-1001602093264",
+        "required": true
+      },
+      "UPSTREAM_REPO": {
+        "description": "Don't Change This, Leave as it is",
+        "value": " https://github.com/Captainamarica/pink-pantherVc-0.1",
+        "required": true
+      },
+      "UPSTREAM_BRANCH": {
+        "description": "Upstream Repo's Branch Name",
+        "value": "master",
+        "required": true
+      }
     },
-    "BOT_TOKEN": {
-      "description": "A bot token from @BotFather",
-      "required": true
-    },
-    "BOT_USERNAME": {
-      "description": "Your bot's username without @",
-      "required": true
-    },
-    "BOT_NAME": {
-      "description": "Your MusicPlayer Bot Name.",
-      "required": false,
-      "value": ""
-    },
-    "SUPPORT_GROUP": {
-      "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
-      "required": false,
-      "value": "Emo_Bot_Support"
-    },
-    "PROJECT_NAME": {
-      "description": "Your MusicPlayer project Name.",
-      "required": false,
-      "value": "Anki Vector"
-    },
-    "ASSISTANT_NAME": {
-      "description": "Your MusicPlayer's assistant Username without @.",
-      "required": true
-    },
-    "ARQ_API_KEY": {
-      "description": "Get from @ARQRobot.",
-      "required": false,
-      "value": ""
-    },    
-    "BG_IMAGE": {
-      "description": "BG image of bot (Use transparent one) [IGNORE].",
-      "required": false,
-      "value": "https://telegra.ph/file/d42b1a9fcd8f735c4be8b.png"
-    },     
-    "UPDATES_CHANNEL": {
-      "description": "Updates Channel without @ [Leave this if you don't have one].",
-      "required": false,
-      "value": "EmorUpdates"
-    },    
-    "API_ID": {
-      "description": "App ID from my.telegram.org/apps",
-      "required": true
-    },
-    "PMPERMIT": {
-      "description": "Change to turn off",
-      "required": false,
-      "value": "ENABLE"
-    },    
-    "API_HASH": {
-      "description": "App hash from my.telegram.org/apps",
-      "required": true
-    },
-    "SUDO_USERS": {
-      "description": "List of user IDs counted as admin everywhere (separated by space).",
-      "required": true
-    },
-    "DURATION_LIMIT": {
-      "description": "Max audio duration limit for downloads (minutes).",
-      "required": true,
-      "value": "10"
-    }
-  }
-}
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "free"
+          }
+      },
+      "stack": "container"
