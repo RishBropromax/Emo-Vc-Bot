@@ -31,7 +31,7 @@ Emo Music heart is the best and only Telegram VC player with playlists, Multi Pl
 ## Stating Session
 
 Get pyrogram   `SESSION` from here:
-[Starting Session Bot](https://t.me/StringFatherBot)
+* [![Run on Repl.it](https://replit.com/badge/github/TeamUltroid/Ultroid)](https://replit.com/@ImRishmika/Emo-Starting-Session)
 
 
 ## ℹ️ Commands
